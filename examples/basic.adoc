@@ -14,6 +14,11 @@ image::https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg[canv
 * Second point
 * Final point
 
+[NOTE.speaker]
+--
+Actually things aren't that bad
+--
+
 == !
 image::html5.svg[]
 
