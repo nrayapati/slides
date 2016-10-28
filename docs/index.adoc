@@ -1,0 +1,7 @@
+= My Slides
+:revealjsdir: ../reveal.js
+:imagesdir: images
+:revealjs_theme: sky
+
+== List of all my personal slides
+http://asciidoctor.org[Asciidoctor]
