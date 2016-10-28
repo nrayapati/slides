@@ -1,0 +1,23 @@
+= My Slides
+
+== Prerequisites
+
+ $ rvm use default
+ or
+ $ rvm use system
+
+ // For Local Mode Only
+ $ git clone -b 3.3.0 --depth 1 https://github.com/hakimel/reveal.js.git
+
+== Build
+
+  $ bundle install
+
+  $ bundle exec asciidoctor-revealjs -a revealjsdir=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0 examples/basic.adoc
+
+  //For Local Mode only
+  $ bundle exec asciidoctor-revealjs examples/basic.adoc
+
+== Examples
+
+See examples/basic.adoc

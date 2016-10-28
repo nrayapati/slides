@@ -1,0 +1,20 @@
+= Example Presentation
+:revealjsdir: ../reveal.js
+:imagesdir: images
+:revealjs_theme: sky
+
+== Topic Slide
+
+image::https://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg[canvas,size=center]
+
+[background-color="yellow"]
+== Key Points
+[%step]
+* First point
+* Second point
+* Final point
+
+== !
+image::html5.svg[]
+
+== The End
