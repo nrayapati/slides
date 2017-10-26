@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>My Slides</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/theme/sky.css" id="theme"><link href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/css/zenburn.css" rel="stylesheet"><script>document.write( '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>My Slides</h1></section><section id="_list_of_all_my_personal_slides"><h2>List of all my personal slides</h2><div class="paragraph"><p><a href="http://asciidoctor.org">Asciidoctor</a></p></div></section></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/head.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>My Slides</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="reveal.js/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="reveal.js/css/theme/sky.css" id="theme"><link href="reveal.js/lib/css/zenburn.css" rel="stylesheet"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section class="title"><h1>My Slides</h1></section><section id="_list_of_all_my_personal_slides"><h2>List of all my personal slides</h2><div class="paragraph"><p><a href="http://asciidoctor.org">Asciidoctor</a></p></div></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
 Reveal.initialize({
   // Display controls in the bottom right corner
   controls: true,
@@ -66,13 +66,78 @@ Reveal.initialize({
   minScale: 0.2,
   maxScale: 1.5,
 
+  menu: {
+      // Specifies which side of the presentation the menu will 
+      // be shown. Use 'left' or 'right'.
+      side: 'left',
+
+      // Add slide numbers to the titles in the slide list.
+      // Use 'true' or format string (same as reveal.js slide numbers)
+      numbers: false,
+
+      // Specifies which slide elements will be used for generating
+      // the slide titles in the menu. The default selects the first
+      // heading element found in the slide, but you can specify any
+      // valid css selector and the text from the first matching
+      // element will be used.
+      // Note: that a section data-menu-title attribute or an element
+      // with a menu-title class will take precedence over this option
+      titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+      // Hide slides from the menu that do not have a title.
+      // Set to 'true' to only list slides with titles.
+      hideMissingTitles: false,
+
+      // Add markers to the slide titles to indicate the 
+      // progress through the presentation
+      markers: false,
+
+      // Specify custom panels to be included in the menu, by
+      // providing an array of objects with 'title', 'icon'
+      // properties, and either a 'src' or 'content' property.
+      custom: false,
+
+      // Specifies the themes that will be available in the themes
+      // menu panel. Set to 'false' to hide themes panel.
+      themes: [
+          { name: 'Black', theme: 'reveal.js/css/theme/black.css' },
+          { name: 'White', theme: 'reveal.js/css/theme/white.css' },
+          { name: 'League', theme: 'reveal.js/css/theme/league.css' },
+          { name: 'Sky', theme: 'reveal.js/css/theme/sky.css' },
+          { name: 'Beige', theme: 'reveal.js/css/theme/beige.css' },
+          { name: 'Simple', theme: 'reveal.js/css/theme/simple.css' },
+          { name: 'Serif', theme: 'reveal.js/css/theme/serif.css' },
+          { name: 'Blood', theme: 'reveal.js/css/theme/blood.css' },
+          { name: 'Night', theme: 'reveal.js/css/theme/night.css' },
+          { name: 'Moon', theme: 'reveal.js/css/theme/moon.css' },
+          { name: 'Solarized', theme: 'reveal.js/css/theme/solarized.css' }
+      ],
+
+      // Specifies if the transitions menu panel will be shown.
+      transitions: true,
+
+      // Adds a menu button to the slides to open the menu panel.
+      // Set to 'false' to hide the button.
+      openButton: true,
+
+      // If 'true' allows the slide number in the presentation to
+      // open the menu panel. The reveal.js slideNumber option must 
+      // be displayed for this to take effect
+      openSlideNumber: false,
+
+      // If true allows the user to open and navigate the menu using
+      // the keyboard. Standard keyboard interaction with reveal
+      // will be disabled while the menu is open.
+      keyboard: true
+  },
   // Optional libraries used to extend on reveal.js
   dependencies: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
       
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+      { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js/plugin/menu/menu.js' }
   ]
 });</script></body></html>

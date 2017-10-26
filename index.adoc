@@ -1,5 +1,5 @@
 = My Slides
-:revealjsdir: ../reveal.js
+:revealjsdir: reveal.js
 :imagesdir: images
 :revealjs_theme: sky
 
